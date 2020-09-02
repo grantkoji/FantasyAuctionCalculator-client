@@ -309,6 +309,9 @@ filterAndSearchPlayers = () => {
   } 
 }
 
+handleMouseOver = (e) => {
+  e.target.style.cursor = 'pointer'
+}
 
 render() { 
   const {searchPrice, searchName, searchPriceStatus } = this.state
@@ -340,7 +343,7 @@ render() {
                             </select>
                             <br></br>
         <div className="player box">{currentPlayerPool ? currentPlayerPool.sort((p1,p2) => p1.user_price > p2.user_price ? -1 : 1).map(player => 
-                <div key={player.id} id={player.id} onClick={() => this.handleClick(player.id)}>
+                <div key={player.id} id={player.id} onClick={() => this.handleClick(player.id)} onMouseOver={this.handleMouseOver}>
                     <div 
                         name={player.player_name} 
                         position={player.player_position} 
