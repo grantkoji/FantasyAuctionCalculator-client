@@ -2,6 +2,8 @@ DraftProjector
 
 DraftProjector is an application that was built to assist a user with budgeting for a fantasy football auction draft. Users will also find team specific news related to their selected favorite team on the home page, after they've logged in. The default case will be NFL news.
 
+For a video demo, visit: https://www.youtube.com/watch?v=kQ9GnT0B0To
+
 To Start
 Please follow the steps below to ensure the API's are on the proper ports.
 
